@@ -1,28 +1,46 @@
 {
   "name": "@cobuildlab/fcp-shared",
   "version": "1.0.0",
+  "keywords": [],
+  "author": "Cobuild Lab",
+  "license": "UNLICENSED",
   "description": "Shared type definitions and utils for FCP modules",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "prepare": "husky install",
+    "lint": "eslint . --ext .ts,.tsx --cache",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write 'src/**/*.{ts,tsx,json,md}'"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "@types/node": "^18.0.0",
     "@types/prettier": "^2.7.3",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.5.2",
-    "typescript": "5.2.2"
+    "typescript": "^5.2.2"
   },
+  "type": "module",
   "engines": {
     "node": ">=18"
   },
   "files": [
     "dist/**/*"
   ],
-  "keywords": [],
-  "author": "Cobuild Lab",
-  "license": "UNLICENSED"
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "prettier --write --ignore-unknown"
+  }
 }

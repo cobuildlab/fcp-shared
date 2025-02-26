@@ -1,7 +1,7 @@
 {
   "name": "@cobuildlab/fcp-shared",
   "version": "1.0.0",
-  "description": "Shared type definitions for FCP modules",
+  "description": "Shared type definitions and utils for FCP modules",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {

@@ -5,3 +5,5 @@ export enum DriverDocuments {
   MedicalCertificate = 'MEDICAL_CERTIFICATE',
   MedicalExaminerVerificationNote = 'MEDICAL_EXAMINER_VERIFICATION_NOTE',
 }
+
+export type DriverDocumentsType = `${DriverDocuments}`;

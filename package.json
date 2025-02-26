@@ -1,7 +1,15 @@
 {
   "name": "@cobuildlab/fcp-shared",
-  "version": "1.1.0",
-  "keywords": ["8base", "development", "dev-dependency", "build-tool", "helper", "node", "npm-package"],
+  "version": "1.2.0",
+  "keywords": [
+    "8base",
+    "development",
+    "dev-dependency",
+    "build-tool",
+    "helper",
+    "node",
+    "npm-package"
+  ],
   "author": "Cobuild Lab",
   "license": "UNLICENSED",
   "description": "Shared type definitions and utils for FCP modules",

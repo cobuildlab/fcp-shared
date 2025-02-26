@@ -1,3 +1,11 @@
 # FCP Shared
 
 Shared type definitions and utils for FCP modules
+
+## Installation
+
+Install with npm:
+
+```bash
+npm install --save-dev @cobuildlab/fcp-shared
+```

@@ -1,4 +1,4 @@
-export enum DriverDocuments {
+export enum DriverDocumentType {
   DriverLicense = 'DRIVER_LICENSE',
   EmploymentApplication = 'EMPLOYMENT_APPLICATION',
   MvrReport = 'MVR_REPORT',
@@ -6,4 +6,4 @@ export enum DriverDocuments {
   MedicalExaminerVerificationNote = 'MEDICAL_EXAMINER_VERIFICATION_NOTE',
 }
 
-export type DriverDocumentsType = `${DriverDocuments}`;
+export type DriverDocumentTypeValues = `${DriverDocumentType}`;

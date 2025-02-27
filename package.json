@@ -51,5 +51,11 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": "prettier --write --ignore-unknown"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   }
 }

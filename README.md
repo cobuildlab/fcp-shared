@@ -7,5 +7,5 @@ Shared type definitions and utils for FCP modules
 Install with npm:
 
 ```bash
-npm install --save-dev @cobuildlab/fcp-shared
+npm install cobuildlab/fcp-shared
 ```

@@ -13,11 +13,15 @@
   "author": "Cobuild Lab",
   "license": "UNLICENSED",
   "description": "Shared type definitions and utils for FCP modules",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "dev": "npm run build:esm -- --watch",
     "prepublish": "npm run build",
     "prepare": "husky install",
     "lint": "eslint . --ext .ts,.tsx --cache",
@@ -38,13 +42,13 @@
     "prettier": "^3.5.2",
     "typescript": "^5.2.2"
   },
-  "type": "module",
   "engines": {
     "node": ">=18"
   },
   "files": [
-    "dist/**/*"
+    "dist"
   ],
+  "type": "commonjs",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
@@ -54,9 +58,9 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
     }
   }
 }

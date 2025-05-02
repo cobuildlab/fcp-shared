@@ -1,5 +1,5 @@
 export enum DriverDocumentType {
-  DriverLicense = 'DRIVER_LICENSE',
+  CommercialDriverLicense = 'COMMERCIAL_DRIVER_LICENSE',
   EmploymentApplication = 'EMPLOYMENT_APPLICATION',
   MvrReport = 'MVR_REPORT',
   MedicalCertificate = 'MEDICAL_CERTIFICATE',

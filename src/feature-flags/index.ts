@@ -1,4 +1,5 @@
 export enum FeatureFlag {
+  MvrReport = 'MVR_REPORT',
   CustomerCategorySelect = 'CUSTOMER_CATEGORY_SELECT',
   CustomerDashboardRedirectButtonNewCases = 'CUSTOMER_DASHBOARD_REDIRECT_BUTTON_NEW_CASES',
   AttachDocumentTabV2 = 'ATTACH_DOCUMENT_TAB_V2',

@@ -15,8 +15,8 @@ export enum CdlClassLabel {
 }
 
 export const CDL_CLASSES = Object.values(CdlClassValue).map((cdlClass, index) => ({
-  label: cdlClass,
-  value: Object.values(CdlClassLabel)[index],
+  label: Object.values(CdlClassLabel)[index],
+  value: cdlClass,
 }));
 
 // Endorsements.
@@ -42,8 +42,8 @@ export enum CdlEndorsementLabel {
 }
 
 export const CDL_ENDORSEMENTS = Object.values(CdlEndorsementValue).map((endorsement, index) => ({
-  label: endorsement,
-  value: Object.values(CdlEndorsementLabel)[index],
+  label: Object.values(CdlEndorsementLabel)[index],
+  value: endorsement,
 }));
 
 // Restrictions.
@@ -73,6 +73,6 @@ export enum CdlRestrictionLabel {
 }
 
 export const CDL_RESTRICTIONS = Object.values(CdlRestrictionValue).map((restriction, index) => ({
-  label: restriction,
-  value: Object.values(CdlRestrictionLabel)[index],
+  label: Object.values(CdlRestrictionLabel)[index],
+  value: restriction,
 }));

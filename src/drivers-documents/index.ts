@@ -7,3 +7,5 @@ export enum DriverDocumentType {
 }
 
 export type DriverDocumentTypeValues = `${DriverDocumentType}`;
+
+export * from './commercial-driver-license';

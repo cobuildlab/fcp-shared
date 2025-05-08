@@ -49,14 +49,14 @@ export const CDL_ENDORSEMENTS = Object.values(CdlEndorsementValue).map((endorsem
 // Restrictions.
 
 export enum CdlRestrictionValue {
-  L = 'L',
-  Z = 'Z',
-  E = 'E',
-  K = 'K',
-  O = 'O',
-  M = 'M',
-  V = 'V',
-  B = 'B',
+  L = 'L_NO_AIRBRAKE_EQUIPPED_CMV',
+  Z = 'Z_NO_FULL_AIRBRAKE_EQUIPPED_CMV',
+  E = 'E_NO_MANUAL_TRANSMISSION_EQUIPPED_CMV',
+  K = 'K_INTRASTATE_ONLY',
+  O = 'O_NO_TRACTOR_TRAILER_CMV',
+  M = 'M_NO_CLASS_A_PASSENGER_VEHICLE',
+  V = 'V_MEDICAL_VARIANCE',
+  B = 'B_CORRECTIVE_LENSES',
   Other = 'OTHER',
 }
 
